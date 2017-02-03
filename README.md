@@ -5,6 +5,11 @@ Using Xamarin.Forms in you project, you can get your devices implementation with
 
     IXPlatformAudioPlayer audioPlayer = DependencyService.Get<IXPlatformAudioPlayer>();
 
+NuGet package at https://www.nuget.org/packages/CYINT.XPlatformAudioPlayer/
+
+	Install-Package CYINT.XPlatformAudioPlayer -Pre 
+
+
 Contributors Welcome
 
 To Do:

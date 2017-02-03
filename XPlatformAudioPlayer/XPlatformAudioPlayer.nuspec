@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>CYINT.XPlatformAudioPlayer</id>
+    <version>0.0.1-alpha</version>
+    <title>XPlatformAudioPlayer</title>
+    <authors>CYINT Technologies</authors>
+    <owners>CYINT Technologies</owners>
+    <projectUrl>https://www.github.com/dfredriksen/XPlatformAudioPlayer</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A cross platform audio player for Xamarin that extends XPlatformMediaPlayer</description>
+    <releaseNotes>Initial pre-release</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Xamarin Audio Player, Android Audio Player</tags>
+  </metadata>
+</package>
