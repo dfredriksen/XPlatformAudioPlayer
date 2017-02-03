@@ -3,7 +3,7 @@ A cross-platform portable class library and abstract implementation for a Xamari
 
 Using Xamarin.Forms in you project, you can get your devices implementation with the following snippet:
 
-    IXPlatformAudioPlayerImplementation audioPlayer = DependencyService.Get<IXPlatformAudioPlayerImplementation>();
+    IXPlatformAudioPlayer audioPlayer = DependencyService.Get<IXPlatformAudioPlayer>();
 
 Contributors Welcome
 

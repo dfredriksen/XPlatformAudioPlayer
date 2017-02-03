@@ -20,7 +20,7 @@ namespace CYINT.XPlatformAudioPlayer
         public AndroidAudioPlayerImplementation()
         {
             _audioPlayerObject = null;
-            _mediaType = XPlatformMediaPlayerImplementation.MEDIA_AUDIO;
+            _mediaType = MEDIA_AUDIO;
         }
 
         public override void SetMediaPlayer(IXPlatformMediaObject mediaPlayerObject)
@@ -30,6 +30,9 @@ namespace CYINT.XPlatformAudioPlayer
 
         public override MediaPlayerObject GetSpecificPlayerObject()
         {
+            if(_audioPlayerObject == null)
+                return null;
+
             return (MediaPlayerObject)_audioPlayerObject;
         }
 
@@ -41,6 +44,9 @@ namespace CYINT.XPlatformAudioPlayer
 
         public AudioPlayerObject GetAudioPlayer()
         {
+            if(_audioPlayerObject == null)
+                GetMediaPlayer(); //Initializes the audio player
+
             return _audioPlayerObject;
         }
         
@@ -50,10 +56,10 @@ namespace CYINT.XPlatformAudioPlayer
             await Task.Run(
                 () =>
                 {
-                    if(GetPlayerState() != XPlatformMediaPlayerImplementation.PLAYER_STATE_NONE)
+                    if(GetPlayerState() != PLAYER_STATE_NONE)
                         ResetResources();
 
-                    SetPlayerState(XPlatformMediaPlayerImplementation.PLAYER_STATE_LOADING);                 
+                    SetPlayerState(PLAYER_STATE_LOADING);                 
                     GetAudioPlayer().SetAudioStreamType(Stream.Music);
                     GetAudioPlayer().SetDataSource(resource);             
                     GetAudioPlayer().PrepareAsync();

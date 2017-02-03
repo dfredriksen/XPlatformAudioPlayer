@@ -37,10 +37,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AndroidMediaPlayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CYINT.XPlatformMediaPlayer.0.0.1-alpha\lib\monoandroid\AndroidMediaPlayer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
       <Private>True</Private>
@@ -118,6 +114,10 @@
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\XPlatformMediaPlayer\AndroidMediaPlayer\AndroidMediaPlayer.csproj">
+      <Project>{9553c1c2-9465-4a6a-8fff-bf1fc04ab0ca}</Project>
+      <Name>AndroidMediaPlayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XPlatformAudioPlayer\XPlatformAudioPlayer.csproj">
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>XPlatformAudioPlayer</Name>
