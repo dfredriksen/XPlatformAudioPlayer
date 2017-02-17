@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("AndroidMediaPlayerImplementation.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("CYINT.XPlatformAudioPlayer.Resource", IsApplication=false)]
 
-namespace AndroidMediaPlayerImplementation
+namespace CYINT.XPlatformAudioPlayer
 {
 	
 	

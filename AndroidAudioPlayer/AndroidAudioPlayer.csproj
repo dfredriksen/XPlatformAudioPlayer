@@ -9,8 +9,8 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AndroidMediaPlayerImplementation</RootNamespace>
-    <AssemblyName>AndroidMediaPlayerImplementation</AssemblyName>
+    <RootNamespace>CYINT.XPlatformAudioPlayer</RootNamespace>
+    <AssemblyName>AndroidAudioPlayer</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
@@ -38,7 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AndroidMediaPlayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CYINT.XPlatformMediaPlayer.0.0.6-alpha\lib\monoandroid\AndroidMediaPlayer.dll</HintPath>
+      <HintPath>..\packages\CYINT.XPlatformMediaPlayer.0.0.8-alpha\lib\monoandroid\AndroidMediaPlayer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -98,6 +98,9 @@
     <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="XPlatformMediaPlayer">
+      <HintPath>..\packages\CYINT.XPlatformMediaPlayer.0.0.8-alpha\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\XPlatformMediaPlayer.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
